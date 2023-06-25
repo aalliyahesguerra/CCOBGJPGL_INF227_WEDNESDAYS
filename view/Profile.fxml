@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProfileController">
+   <children>
+      <ImageView fitHeight="492.0" fitWidth="1080.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/profgif.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="285.0" fitWidth="310.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/profile.png" />
+         </image>
+      </ImageView>
+      <Pane layoutY="703.0" prefHeight="107.0" prefWidth="1080.0" style="-fx-background-color: #d37171;">
+         <children>
+            <Button fx:id="wednesdaysbutton" layoutX="202.0" layoutY="-17.0" mnemonicParsing="false" onAction="#gotoHome" prefHeight="134.0" prefWidth="670.0" style="-fx-background-color: transparent;" text="WEDNESDAYS." textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="65.0" />
+               </font>
+            </Button>
+         </children></Pane>
+      <Label layoutX="440.0" layoutY="241.0" text="My Profile" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="413.0" layoutY="327.0" text="Name:" textFill="#d37171">
+         <font>
+            <Font name="Times New Roman Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="412.0" layoutY="395.0" text="Email:" textFill="#d37171">
+         <font>
+            <Font name="Times New Roman Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="398.0" layoutY="469.0" text="Gender: " textFill="#d37171">
+         <font>
+            <Font name="Times New Roman Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="371.0" layoutY="544.0" text="Birthdate:" textFill="#d37171">
+         <font>
+            <Font name="Times New Roman Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="291.0" layoutY="616.0" text="Mobile Number: " textFill="#d37171">
+         <font>
+            <Font name="Times New Roman Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel" layoutX="556.0" layoutY="330.0" text="Elizer Ponio">
+         <font>
+            <Font name="Times New Roman" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="emailLabel" layoutX="553.0" layoutY="398.0" text="elizerponio@gmail.com">
+         <font>
+            <Font name="Times New Roman" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="genderLabel" layoutX="556.0" layoutY="472.0" text="Male">
+         <font>
+            <Font name="Times New Roman" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="birthdateLabel" layoutX="560.0" layoutY="547.0" text="04-03-1991">
+         <font>
+            <Font name="Times New Roman" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="phonenumLabel" layoutX="556.0" layoutY="619.0" text="0912-345-6789">
+         <font>
+            <Font name="Times New Roman" size="25.0" />
+         </font>
+      </Label>
+      <MenuBar fx:id="profilemenubar" layoutX="32.0" layoutY="24.0" prefHeight="55.0" prefWidth="351.0" style="-fx-background-color: transparent;" stylesheets="@../style.css">
+         <menus>
+            <Menu fx:id="profilemenu" mnemonicParsing="false">
+               <items>
+                  <MenuItem fx:id="homemenuitem" mnemonicParsing="false" onAction="#gotoHome" styleClass="menuitem" text="Home" />
+                  <MenuItem fx:id="logoutmenuitem" mnemonicParsing="false" onAction="#gotoLogin" styleClass="menuitem" text="Logout" />
+               </items>
+               <graphic>
+                  <ImageView fitHeight="56.0" fitWidth="41.0">
+                     <image>
+                        <Image url="@../images/pinkline.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

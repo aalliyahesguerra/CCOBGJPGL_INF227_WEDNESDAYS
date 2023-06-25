@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1085.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProductViewController">
+   <children>
+      <ImageView fx:id="productImage" fitHeight="385.0" fitWidth="385.0" layoutX="40.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/eyelettop4.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="productName" layoutX="568.0" layoutY="312.0" text="Cotton Linen: Shirt">
+         <font>
+            <Font name="Times New Roman Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="getSize" layoutX="517.0" layoutY="480.0" text="size:">
+         <font>
+            <Font name="Times New Roman Bold" size="25.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="511.0" layoutY="535.0" mnemonicParsing="false" text="XS" fx:id="xsbutton">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="size" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="sbutton" layoutX="590.0" layoutY="535.0" mnemonicParsing="false" text="S" toggleGroup="$size">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="mbutton" layoutX="659.0" layoutY="535.0" mnemonicParsing="false" text="M" toggleGroup="$size">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="lbutton" layoutX="725.0" layoutY="535.0" mnemonicParsing="false" text="L" toggleGroup="$size">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="792.0" layoutY="535.0" mnemonicParsing="false" text="XL" toggleGroup="$size" fx:id="xlbutton">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="873.0" layoutY="535.0" mnemonicParsing="false" text="XXL" toggleGroup="$size" fx:id="xxlbutton">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="productDescription" layoutX="511.0" layoutY="419.0" text="Relaxed-fit shirt made of a linen blend. Button-down collar.">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="28.0" fitWidth="126.0" layoutX="614.0" layoutY="598.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ratings.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="514.0" layoutY="593.0" text="ratings:">
+         <font>
+            <Font name="Times New Roman Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="287.0" layoutY="34.0" mnemonicParsing="false" style="-fx-background-color: TRANSPARENT;" text="WEDNESDAYS." textFill="#d37171">
+         <font>
+            <Font name="Times New Roman Bold" size="65.0" />
+         </font>
+      </Button>
+      <Button layoutX="907.0" layoutY="82.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+      <Button fx:id="profilebutton" layoutX="997.0" layoutY="115.0" mnemonicParsing="false" onAction="#gotoProfile" prefHeight="83.0" prefWidth="83.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="73.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/profile.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="cartbutton" layoutX="940.0" layoutY="121.0" mnemonicParsing="false" onAction="#gotoCart" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/cart.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="nextbutton" layoutX="392.0" layoutY="369.0" mnemonicParsing="false" onAction="#handleNext" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/next.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="previousbutton" layoutX="-1.0" layoutY="372.0" mnemonicParsing="false" onAction="#handlePrev" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="productPrice" layoutX="653.0" layoutY="357.0" text=" 2,000.00" textFill="#d37171">
+         <font>
+            <Font name="Times New Roman" size="52.0" />
+         </font>
+      </Label>
+      <MenuBar fx:id="homemenubar" layoutX="40.0" layoutY="139.0" prefHeight="55.0" prefWidth="351.0" style="-fx-background-color: transparent;" stylesheets="@../style.css">
+         <menus>
+            <Menu fx:id="menuowners" mnemonicParsing="false" text="Owner's picks">
+               <items>
+                  <MenuItem fx:id="Jeanne" mnemonicParsing="false" onAction="#gotoJeannes" styleClass="menuitem" text="Jeanne" />
+                  <MenuItem fx:id="Bianca" mnemonicParsing="false" onAction="#gotoBias" styleClass="menuitem" text="Bianca" />
+                  <MenuItem fx:id="Liyah" mnemonicParsing="false" onAction="#gotoLiyahs" styleClass="menuitem" text="Liyah" />
+                  <MenuItem fx:id="Nivek" mnemonicParsing="false" onAction="#gotoNiveks" styleClass="menuitem" text="Nivek" />
+               </items>
+            </Menu>
+            <Menu fx:id="categories" mnemonicParsing="false" text="Categories">
+               <items>
+                  <MenuItem fx:id="menmenuitem" mnemonicParsing="false" onAction="#gotoMens" styleClass="menuitem" text="Men" />
+                  <MenuItem fx:id="womenmenuitem" mnemonicParsing="false" onAction="#gotoWomens" styleClass="menuitem" text="Women" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Button fx:id="favbutton" layoutX="888.0" layoutY="120.0" mnemonicParsing="false" onAction="#gotoFavorites" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="65.0" fitWidth="55.0">
+               <image>
+                  <Image url="@../images/heart.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</Pane>
