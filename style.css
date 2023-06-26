@@ -1,0 +1,141 @@
+
+
+
+#shopbutton
+ {
+    -fx-background-color: transparent;
+ }
+#shopbutton:hover 
+{
+  -fx-background-color: rgba(171, 182, 185, 0.932);
+} 
+
+
+/* MENU BAR IN HOME PAGE*/
+#homemenubar
+{
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 20px;
+
+ }
+
+#menuowners:hover{
+  -fx-background-color: "#d37171";
+}
+#menumen:hover{
+  -fx-background-color: "#d37171";
+}
+#menuwomen:hover{
+  -fx-background-color: "#d37171";
+}
+
+.menuitem:hover{
+  -fx-background-color: "#d37171";
+}
+
+
+
+.menubar:hover{
+  -fx-background-color: "#d37171";
+}
+
+#categories:hover{
+  -fx-background-color: "#d37171";
+}
+
+
+#biancaspicks {
+  -fx-background-color: transparent;
+
+}
+#liyahspicks {
+  -fx-background-color: transparent;
+
+}
+#jeannespicks {
+  -fx-background-color: transparent;
+
+}
+#nivekspicks {
+  -fx-background-color: transparent;
+
+}
+
+#biancaspicks:hover{
+  -fx-background-color: rgba(255, 202, 202, 0.932);
+
+}
+
+#liyahspicks:hover{
+  -fx-background-color: rgba(255, 202, 202, 0.932);
+
+}
+#jeannespicks:hover{
+  -fx-background-color: rgba(255, 202, 202, 0.932);
+
+}
+#nivekspicks:hover{
+  -fx-background-color: rgba(255, 202, 202, 0.932);
+
+}
+#profilemenu:hover{
+  -fx-background-color: white ;
+
+}
+
+#profilemenu {
+  -fx-font-family: "Times New Roman";
+  -fx-font-size: 20px;
+
+}
+
+#loginbutton:hover{
+  -fx-background-color: #ffcacaee ;
+}
+
+
+#loginbutton {
+  -fx-background-color: white;
+  
+}
+
+#signupbutton {
+  -fx-background-color: "#d37171";
+}
+
+#signupbutton:hover{
+  -fx-background-color: rgba(255, 202, 202, 0.932);
+}
+
+#signbutton{
+  -fx-background-color: "#d37171";
+}
+#signbutton:hover{
+  -fx-background-color: rgba(255, 202, 202, 0.932);
+}
+
+#cancelbutton {
+  -fx-background-color: white;
+}
+
+#cancelbutton:hover{
+  -fx-background-color: rgba(255, 202, 202, 0.932);
+}
+
+#rhomebutton {
+  -fx-background-color: "#d37171";
+
+}
+
+#rhomebutton:hover{
+  -fx-background-color: rgba(255, 202, 202, 0.932);
+}
+
+#logoutbutton {
+  -fx-background-color: white;
+
+}
+
+#logoutbutton:hover{
+  -fx-background-color: rgba(255, 202, 202, 0.932);
+}
